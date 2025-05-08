@@ -114,7 +114,7 @@ Hot partitioning of data can done in two ways:
 #### Logical set
 
 In this strategy, we collect user-defined inputs—such as the partition keys over which the dataset should be logically segmented. Based on these keys, we generate a structured metadata representation that captures partition-specific information for each key, as illustrated below.
-
+```
 \[  
    {  
        "keyColumnName": "partition\_key1",  
@@ -149,7 +149,8 @@ In this strategy, we collect user-defined inputs—such as the partition keys ov
        "keyColumnName": "partition\_key2",  
        "keyValues": {}  
    }  
-\]  
+\]
+```
 Each piece of metadata is meaningful and plays a crucial role in identifying the exact paths where specific partition keys reside, thereby **minimizing the amount of data scanned during query execution**.  
 The fields "totalRecordsInFile" and "keyRecordsInFile" enable a short-circuiting mechanism, allowing the system to bypass unnecessary records reads. This too reduces I/O operations and accelerates the processing of input data.
 
