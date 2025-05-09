@@ -1,7 +1,5 @@
 # Innumerable Hot Data partitioning and de-partition of large distributed data set
 
-## Nirmit Jain jainnirmit8@gmail.com
-
 ## Context
 
 In this paper, we primarily refer to large distributed datasets maintained within a data lake, which are either directly queried by end consumers or accessed by multiple consumers with distinct query patterns—some oriented toward analytical workloads, while others are more transactional in nature.
