@@ -227,7 +227,7 @@ Below is the pseudo algorithm to follow for implementing Write on read partition
 
 Post Hot partitioning of data using “Write on read” the dataset will look as depicted below 
 
-![][image1]  
+![](https://github.com/nj7/Hot-Data-partitioning/blob/main/images/wor_file_structure.png?raw=true)
 In this approach, unprocessed data naturally accumulates all partition key values that have not yet been queried or accessed. This becomes a beneficial byproduct of the Write-on-Read (WoR) Hot Partitioning strategy, where unaccessed data is automatically identified without requiring explicit tracking or additional processing.
 
 ##### Advantages of Write on Read
